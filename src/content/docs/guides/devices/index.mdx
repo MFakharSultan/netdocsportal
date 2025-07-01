@@ -1,0 +1,63 @@
+---
+title: Network Devices  
+description: Explore the essential hardware components that build and manage modern networks—such as routers, switches, modems, firewalls, and more.
+---
+
+import { CardGrid } from "@astrojs/starlight/components"
+
+Networking relies on various **hardware devices** that perform specific roles in **data transmission**, **traffic control**, **signal processing**, and **network security**. Each device operates at different layers of the OSI model and serves a distinct purpose in the overall architecture.
+
+Understanding the function of each device is essential for designing, managing, and securing a network effectively.
+
+---
+
+## Device Categories
+
+### 🧰 Core Networking Devices
+
+These devices form the backbone of both home and enterprise networks.
+
+<CardGrid>
+  <a href="/guides/basics/network-devices/repeater" class="card">📡 Repeater</a>
+  <a href="/guides/basics/network-devices/hub" class="card">🧱 Hub</a>
+  <a href="/guides/basics/network-devices/bridge" class="card">🌉 Bridge</a>
+  <a href="/guides/basics/network-devices/switch" class="card">🔀 Switch</a>
+  <a href="/guides/basics/network-devices/router" class="card">🌐 Router</a>
+  <a href="/guides/basics/network-devices/modem" class="card">📞 Modem</a>
+  <a href="/guides/basics/network-devices/wap" class="card">📶 Wireless Access Point</a>
+</CardGrid>
+
+---
+
+### 🔐 Security & Control
+
+These devices manage, protect, and monitor network traffic.
+
+<CardGrid>
+  <a href="/guides/basics/network-devices/firewall" class="card">🔒 Firewall</a>
+</CardGrid>
+
+---
+
+## OSI Layer Overview
+
+| **Device**              | **OSI Layer**        | **Purpose**                           |
+|-------------------------|----------------------|----------------------------------------|
+| Repeater                | Layer 1 (Physical)    | Boosts signal strength                 |
+| Hub                     | Layer 1 (Physical)    | Broadcasts data to all devices         |
+| Bridge                  | Layer 2 (Data Link)   | Filters traffic between segments       |
+| Switch                  | Layer 2 (Data Link)   | Directs traffic based on MAC addresses |
+| Router                  | Layer 3 (Network)     | Routes data between networks           |
+| Modem                   | Layer 1 (Physical)    | Converts digital to analog and vice versa |
+| Wireless Access Point   | Layer 2 (Data Link)   | Connects wireless devices to LAN       |
+| Firewall                | Layer 3–7             | Controls and secures traffic           |
+
+---
+
+## Summary
+
+Each network device plays a vital role in how data is transmitted, routed, extended, or secured. Whether you're building a **home LAN** or designing a **corporate enterprise network**, knowing what each component does helps you create more **efficient**, **reliable**, and **secure** infrastructures.
+
+<aside type="note">
+Next up, explore how these devices work together in different <a href="/guides/basics/network-topologies">network topologies</a>.
+</aside>

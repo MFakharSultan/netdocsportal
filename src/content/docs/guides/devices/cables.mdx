@@ -1,0 +1,135 @@
+---
+title: Network Cables  
+description: Understand the types of cables used in networking, including coaxial, twisted pair, and fiber optic cables—their structure, uses, advantages, and limitations.
+---
+
+import { Aside } from "@astrojs/starlight/components"
+
+Network cables are the **physical medium** that connects computers, switches, routers, and other devices in a network. While wireless is common today, wired connections are still essential for **speed**, **security**, and **stability**.
+
+> A **network cable** transmits data signals between devices in a local area network (LAN) or wide area network (WAN).
+
+Let’s explore the most commonly used cable types in modern networking.
+
+---
+
+## 1. Coaxial Cable
+
+**Coaxial cables** (or *coax*) consist of a central copper conductor, surrounded by insulation, a braided shield, and an outer jacket.
+
+![](/images/basics/coaxial-cable.webp)
+
+> Originally used for TV signals, coax was one of the first cable types used in Ethernet networks.
+
+**Common types**: RG-6, RG-59
+
+**Pros:**
+
+- Durable and resistant to interference
+- Long-distance signal transmission
+- Good for broadband and cable TV
+
+**Cons:**
+
+- Bulky and less flexible
+- Slower data rates than newer options
+- Largely replaced in modern LANs
+
+**Use cases**: Older Ethernet (10Base2, 10Base5), broadband internet, CCTV
+
+---
+
+## 2. Twisted Pair Cable
+
+This is the most widely used cable type for LANs. It consists of **pairs of copper wires twisted together**, which reduces electromagnetic interference (EMI).
+
+![](/images/basics/twisted-pair-cable.webp)
+
+There are two types:
+
+### Unshielded Twisted Pair (UTP)
+
+- Common in homes and offices
+- No shielding; relies on twists to reduce noise
+
+### Shielded Twisted Pair (STP)
+
+- Includes additional shielding to block EMI
+- Used in environments with high interference
+
+**Categories**:  
+- **Cat5e** – up to 100 Mbps–1 Gbps  
+- **Cat6 / 6a** – up to 10 Gbps  
+- **Cat7 / 8** – higher performance, shielded
+
+**Pros:**
+
+- Flexible and easy to install
+- Affordable
+- Supports high-speed data transfer
+
+**Cons:**
+
+- Limited distance (up to 100 meters)
+- Susceptible to interference (UTP)
+
+**Use cases**: Ethernet (10/100/1000Base-T), VoIP, home and enterprise networks
+
+---
+
+## 3. Fiber Optic Cable
+
+Fiber optic cables use **light pulses** instead of electrical signals to transmit data. They consist of a **glass or plastic core**, cladding, and a protective jacket.
+
+![](/images/basics/fiber-optic-cable.webp)
+
+There are two types:
+
+### Single-Mode Fiber (SMF)
+
+- Thin core (~9 µm)
+- Long-distance, high-bandwidth (up to 100 km)
+
+### Multi-Mode Fiber (MMF)
+
+- Thicker core (~50–62.5 µm)
+- Shorter distances (up to 2 km)
+- Lower cost for LANs
+
+**Pros:**
+
+- Very high bandwidth
+- Immune to electromagnetic interference
+- Secure and reliable
+
+**Cons:**
+
+- More expensive
+- Fragile and harder to install
+
+**Use cases**: Data centers, long-distance ISP backbones, high-speed WAN links
+
+---
+
+## Comparison Table
+
+| **Cable Type** | **Speed**       | **Max Distance** | **EMI Resistance** | **Cost**       | **Use Case**                     |
+|----------------|------------------|------------------|--------------------|----------------|----------------------------------|
+| Coaxial        | Low–Medium       | ~500 m           | Moderate           | Low–Medium     | TV, broadband, legacy Ethernet   |
+| Twisted Pair   | Medium–High      | ~100 m           | Low (UTP), High (STP) | Low–Medium  | Home/office LAN, Ethernet        |
+| Fiber Optic    | Very High        | Up to 100+ km    | Very High          | High           | Backbone, ISP, long-haul WAN     |
+
+---
+
+## Summary
+
+Network cables are the **foundation of wired communication**. Choosing the right type depends on:
+
+- **Speed and distance requirements**
+- **Budget**
+- **Environmental interference**
+- **Application (LAN, WAN, ISP, etc.)**
+
+<Aside type="note">
+Up next: Explore how wireless networking works using **Wi-Fi standards and access points**, and when to choose wired vs wireless networking.
+</Aside>

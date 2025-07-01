@@ -1,0 +1,115 @@
+---
+title: IP Address Basics  
+description: Learn what IP addresses are, how they work, and why they're essential for communication in computer networks.
+---
+
+import { Aside } from "@astrojs/starlight/components"
+
+Every device on a network—computers, phones, servers—needs a unique way to identify itself. This is where **IP addresses** come in.
+
+> An **IP address (Internet Protocol address)** is a unique identifier assigned to each device on a network. It allows data to find the right destination.
+
+Think of it as a **home address** for your device, telling the network where to deliver information.
+
+---
+
+## Why IP Addresses Matter
+
+IP addresses are crucial for:
+
+- **Device identification** – Every machine must have a unique address.
+- **Communication** – Data needs a destination and a return path.
+- **Routing** – Routers use IP addresses to forward data to the right place.
+
+---
+
+## Types of IP Addresses
+
+There are two main versions of IP addresses in use:
+
+### IPv4 (Internet Protocol version 4)
+
+- Format: `xxx.xxx.xxx.xxx` (e.g., `192.168.1.1`)
+- Each segment ranges from `0–255`
+- **32-bit address** space
+- Approximately **4.3 billion** unique addresses
+
+> Example: `172.16.254.1`
+
+### IPv6 (Internet Protocol version 6)
+
+- Format: Eight groups of four hexadecimal digits (e.g., `2001:0db8:85a3::8a2e:0370:7334`)
+- **128-bit address** space
+- Provides **trillions** of unique addresses
+- Designed to replace IPv4 due to address exhaustion
+
+---
+
+## Public vs. Private IP Addresses
+
+| **Type**   | **Scope**            | **Used For**                  | **Example**            |
+|------------|----------------------|-------------------------------|------------------------|
+| **Public** | Globally routable    | Internet-facing devices       | `8.8.8.8`              |
+| **Private**| Local area networks  | Devices within home/office    | `192.168.0.10`         |
+
+> Private IP addresses are not accessible from the public internet. They are typically used behind a **NAT** (Network Address Translation) router.
+
+---
+
+## Static vs. Dynamic IPs
+
+- **Static IP**: Manually assigned, does not change.
+  - Use case: servers, printers, or critical infrastructure.
+- **Dynamic IP**: Assigned automatically by a DHCP server and may change over time.
+  - Use case: most home users and mobile devices.
+
+---
+
+## IP Address Structure (IPv4)
+
+An IPv4 address has **two parts**:
+
+1. **Network ID** – identifies the network
+2. **Host ID** – identifies the device within that network
+
+This division is determined by the **subnet mask**.
+
+> Example:  
+> IP: `192.168.1.10`  
+> Subnet Mask: `255.255.255.0`  
+> → Network: `192.168.1.0`, Host: `.10`
+
+---
+
+## Subnetting (Intro)
+
+**Subnetting** is the practice of dividing a network into smaller logical groups.
+
+- Improves performance and security
+- Reduces broadcast traffic
+- Common in enterprise networks
+
+> A deeper dive into subnetting is available in our upcoming chapter:  
+> [→ Introduction to Subnetting](/guides/intermediate/subnetting)
+
+---
+
+## Common IPv4 Address Ranges
+
+| **Purpose**         | **Range**               | **Notes**                       |
+|---------------------|--------------------------|----------------------------------|
+| Private (Class A)   | `10.0.0.0 – 10.255.255.255` | Used in large private networks  |
+| Private (Class B)   | `172.16.0.0 – 172.31.255.255` | Medium-sized networks          |
+| Private (Class C)   | `192.168.0.0 – 192.168.255.255` | Most common for home routers |
+| Loopback            | `127.0.0.0 – 127.255.255.255` | Refers to the local device     |
+| APIPA (Link-local)  | `169.254.0.0 – 169.254.255.255` | Automatic assignment when DHCP fails |
+
+---
+
+## Summary
+
+An IP address is like a **digital address** for your device, enabling communication across local and global networks. Whether using IPv4 or IPv6, public or private, understanding IP addresses is foundational to managing and securing any network.
+
+<Aside type="tip">
+Next: Learn how devices get their IP addresses with **DHCP**, and how routing works across networks using **subnetting** and **default gateways**.
+</Aside>

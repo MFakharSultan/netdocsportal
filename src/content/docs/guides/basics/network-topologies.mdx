@@ -1,0 +1,156 @@
+---
+title: Network Topologies
+description: Understand how computers and devices are physically and logically arranged in a network through different topology structures like bus, star, ring, mesh, and hybrid.
+---
+
+import { Aside } from "@astrojs/starlight/components"
+
+So far, we’ve explored **what [networks](/guides/basics/introduction) are** and the **[types of networks](/guides/basics/types-of-computer-networks)** that exist. But how are the devices inside a network actually connected to one another?
+
+That’s where **network topology** comes in.
+
+> A **network topology** is the way devices (or nodes) are arranged and connected in a network. It defines both the **physical layout** (actual wires, devices) and the **logical flow** of data.
+
+Just like streets and paths in a city determine how people move, a topology decides how data travels from one device to another in a network.
+
+---
+
+## Why Topology Matters
+
+Choosing the right topology affects:
+
+- **Performance** – how fast data can move.
+- **Reliability** – how the network handles failures.
+- **Cost** – how much it takes to build and maintain.
+- **Scalability** – how easily it can grow.
+
+Let’s look at the most common types of network topologies.
+
+---
+
+## 1. Bus Topology – A Single Shared Line
+
+In a **bus topology**, all devices are connected to a **single central cable** (called a "bus").
+
+Data travels in both directions on this line. Only one device can send data at a time, and if the main cable fails, the entire network goes down.
+
+> Imagine people shouting down a hallway—only one person can talk at a time, and if the hallway collapses, no one can communicate.
+
+![](/images/basics/bus-topology.webp)
+
+**Pros:**
+
+- Easy and cheap to set up
+- Good for small networks
+
+**Cons:**
+
+- Not scalable
+- Performance drops as more devices are added
+- One cable failure breaks the whole network
+
+---
+
+## 2. Star Topology – Hub in the Center
+
+A **star topology** connects all devices to a **central hub or switch**. Data flows from one device to the hub, and then to the destination device.
+
+> Think of it like a wheel, with the hub in the middle and spokes connecting each device.
+
+![](/images/basics/star-topology.webp)
+
+**Pros:**
+
+- Easy to manage and add devices
+- One cable failure won’t crash the whole network
+
+**Cons:**
+
+- If the hub fails, everything stops
+- Requires more cables than bus
+
+---
+
+## 3. Ring Topology – Data Goes in a Circle
+
+In a **ring topology**, each device connects to exactly two others, forming a **closed loop**. Data travels in one direction around the ring until it reaches its destination.
+
+> Think of it like passing a note around a circular table—everyone has to wait their turn.
+
+![](/images/basics/ring-topology.webp)
+
+**Pros:**
+
+- Predictable data flow
+- No data collisions
+
+**Cons:**
+
+- One broken connection can affect the whole network
+- Difficult to troubleshoot
+
+---
+
+## 4. Mesh Topology – Everyone Talks to Everyone
+
+In a **mesh topology**, every device is connected to **every other device** in the network. This offers multiple paths for data to travel.
+
+> It’s like a group chat where everyone is directly connected to everyone else.
+
+![](/images/basics/mesh-topology.webp)
+
+**Pros:**
+
+- Very reliable and fault-tolerant
+- Great for critical systems
+
+**Cons:**
+
+- Very expensive and complex to set up
+- Not practical for large networks
+
+---
+
+## 5. Hybrid Topology – Best of All Worlds
+
+A **hybrid topology** combines two or more different topologies. For example, a star of rings or a bus of stars.
+
+This allows you to **customize** the network based on specific needs—performance in one area, cost savings in another.
+
+> It’s like designing a city with roads, subways, and bike lanes all working together.
+
+![](/images/basics/hybrid-topology.webp)
+
+**Pros:**
+
+- Flexible and scalable
+- Optimized for various needs
+
+**Cons:**
+
+- Can be complex to manage
+- Higher cost than simpler topologies
+
+---
+
+## Comparison Table
+
+| **Topology** | **Structure**                | **Reliability** | **Cost**       | **Ease of Setup** | **Best Use Case**                  |
+|--------------|------------------------------|------------------|----------------|-------------------|------------------------------------|
+| **Bus**      | All devices on one cable     | Low              | Low            | Easy              | Small, temporary networks          |
+| **Star**     | Devices connect to a hub     | Moderate         | Moderate       | Easy              | Home or office LANs                |
+| **Ring**     | Devices in a loop            | Low–Moderate     | Moderate       | Moderate          | Networks needing ordered flow      |
+| **Mesh**     | Each device to every other   | Very High        | Very High      | Complex           | Military, banking, critical systems |
+| **Hybrid**   | Combination of topologies    | High             | Varies         | Complex           | Large, scalable enterprise setups  |
+
+---
+
+## Summary
+
+Network topologies are like the **blueprints** of how devices are connected. Each topology has its strengths and weaknesses, depending on the needs of the network—speed, reliability, cost, or size.
+
+Understanding topologies helps you design smarter networks and troubleshoot them more effectively.
+
+<Aside type="note">
+  In the next chapter, we’ll learn about **network devices**—like routers, switches, and hubs—that make these topologies work in real life.
+</Aside>

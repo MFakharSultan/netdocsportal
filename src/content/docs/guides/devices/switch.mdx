@@ -1,0 +1,68 @@
+---
+title: Switch
+description: Understand what a network switch is, how it differs from a hub, and where it's used in modern LAN environments.
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+A **network switch** is a device that connects devices in a local area network (LAN) and forwards data intelligently using **MAC addresses**.
+
+> It operates at **Layer 2** of the OSI model and sends data only to the intended recipient, unlike a hub which broadcasts to all devices.
+
+---
+
+## How a Switch Works
+
+When a device sends data, the switch checks the destination **MAC address** and forwards the frame only to the appropriate port.
+
+Switches **learn** the MAC addresses of connected devices by analyzing incoming traffic, storing them in a **MAC address table**.
+
+![](/images/devices/switch-diagram.webp)
+
+---
+
+## Analogy
+
+> A switch is like a receptionist who delivers mail directly to each employee's desk, rather than shouting across the office.
+
+---
+
+## Pros
+
+- Efficient, reduces network congestion
+- More secure than hubs
+- Supports full-duplex communication
+
+## Cons
+
+- More costly than hubs
+- Cannot route between networks (needs router)
+
+---
+
+## Use Cases
+
+- Office LANs
+- Homes with wired Ethernet setups
+- Server farms and data centers
+
+---
+
+## Switch vs. Hub
+
+| Feature       | Switch                    | Hub               |
+| ------------- | ------------------------- | ----------------- |
+| Data Handling | Forwards to specific port | Broadcasts to all |
+| OSI Layer     | Layer 2                   | Layer 1           |
+| Performance   | High                      | Low               |
+
+---
+
+## Summary
+
+Switches form the backbone of modern LANs by **efficiently managing data traffic**. Understanding how they work helps in designing and troubleshooting scalable networks.
+
+<Aside type="note">
+  Next: Learn how **routers** connect different networks and manage traffic
+  between them.
+</Aside>

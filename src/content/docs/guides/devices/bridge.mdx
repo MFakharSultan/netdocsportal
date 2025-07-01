@@ -1,0 +1,42 @@
+---
+title: Bridge  
+description: Learn how a bridge connects network segments and helps reduce collision domains in LANs.
+---
+
+A **bridge** is used to divide a large network into **smaller segments** and filter traffic between them.
+
+> It works at **Layer 2 (Data Link)** of the OSI model and uses **MAC addresses** to forward or block data.
+
+---
+
+## How It Works
+
+The bridge inspects incoming frames and decides whether to forward them to another segment based on the destination MAC address.
+
+![](/images/devices/bridge-diagram.webp)
+
+---
+
+## Analogy
+
+> A bridge is like a hallway monitor who decides whether someone can pass from one classroom to another.
+
+---
+
+## Pros
+
+- Reduces collisions by segmenting traffic
+- Works with legacy devices
+- Transparent to upper-layer protocols
+
+## Cons
+
+- Slower than switches
+- Limited functionality
+
+---
+
+## Use Cases
+
+- Dividing traffic in small LANs
+- Connecting two older network segments

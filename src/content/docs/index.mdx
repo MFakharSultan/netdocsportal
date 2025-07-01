@@ -1,0 +1,48 @@
+---
+title: Networking Documentation Portal
+description: Your centralized resource for all networking documentation.
+template: splash
+hero:
+  tagline: Your centralized resource for all networking documentation.
+  image:
+    file: ../../assets/houston.gif
+  actions:
+    - text: Browse All Topics
+      link: /guides/basics/introduction
+      icon: right-arrow
+    - text: Support me
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Key Area of Focus
+
+<CardGrid>
+  <Card title="Network Topologies" icon="approve-check">
+    Understand LAN, WAN, mesh, and hybrid configurations with visual diagrams
+    and practical guidance.
+  </Card>
+  <Card title="Cabling & Interfaces" icon="approve-check">
+    Reference standards and best practices for Ethernet, fiber optics, and
+    physical interfaces.
+  </Card>
+  <Card title="Devices & Configuration" icon="approve-check">
+    Explore routers, switches, firewalls, and access points, along with CLI and
+    GUI configuration examples.
+  </Card>
+  <Card title="Protocols & Standards" icon="approve-check">
+    Dive into TCP/IP, BGP, OSPF, VLANs, and other foundational protocols that
+    keep your network operational.
+  </Card>
+  <Card title="Monitoring & Troubleshooting" icon="approve-check">
+    Tools, techniques, and logs for network health checks, latency diagnostics,
+    and incident response.
+  </Card>
+  <Card title="Security & Compliance" icon="approve-check">
+    Best practices for securing infrastructure and meeting regulatory
+    requirements (e.g., ISO, NIST).
+  </Card>
+</CardGrid>
