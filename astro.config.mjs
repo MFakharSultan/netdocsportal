@@ -7,7 +7,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  trailingSlash: "never",
   site: process.env.SITE_URL || "https://netdocsportal.vercel.app",
   integrations: [
     starlight({
@@ -18,7 +17,7 @@ export default defineConfig({
         {
           label: "Networking Fundamentals",
           items: [
-            { label: "Introduction", slug: "guides/basics/intro" },
+            { label: "Introduction", slug: "guides/basics/introduction" },
             {
               label: "Types of Networks",
               slug: "guides/basics/types-of-computer-networks",
