@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [
     starlight({
       plugins: [starlightThemeRapide()],
-      title: "Netco",
+      title: "NetDocsPortal",
       // customCss: ["./src/styles/global.css"],
       sidebar: [
         {
