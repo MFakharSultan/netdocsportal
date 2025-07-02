@@ -13,7 +13,7 @@ export default defineConfig({
     starlight({
       plugins: [starlightThemeRapide()],
       title: "Netco",
-      customCss: ["./src/styles/global.css"],
+      // customCss: ["./src/styles/global.css"],
       sidebar: [
         {
           label: "Networking Fundamentals",
