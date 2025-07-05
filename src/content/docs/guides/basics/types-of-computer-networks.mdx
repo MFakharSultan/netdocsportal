@@ -3,8 +3,8 @@ title: Types of Computer Networks
 description: Understand the different types of computer networks—such as LAN, WAN, MAN, and PAN—and how they are used in everyday scenarios.
 ---
 
+import { Image } from "astro:assets";
 import { Aside } from "@astrojs/starlight/components";
-
 
 Before diving deeper into advanced networking concepts, it’s important to understand the **different types of computer networks**. Just like people build different types of relationships—based on who is involved and what the relationship is for—computers also connect in different ways, depending on the purpose, location, and scale.
 
@@ -22,7 +22,11 @@ If you've used Wi-Fi at home to connect your phone, laptop, or printer, then you
 
 > **Think of LAN** as your local network that keeps your devices talking to each other under one roof.
 
-![](/images/basics/lan-network.gif)
+<video autoplay loop muted playsinline>
+  <source src="/videos/basics/lan-network.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ### 2. Metropolitan Area Network (MAN)
@@ -33,8 +37,12 @@ For example, a university might have several buildings—like lecture halls, lib
 
 > **Think of MAN** as a city-wide network that links together different locations under one system.
 
-![](/images/basics/man-network.webp)
----
+<Image
+  src="/images/basics/man-network.webp"
+  alt="A MAN network diagram"
+  width={1200}
+  height={630}
+/>
 
 ### 3. Wide Area Network (WAN)
 
@@ -44,8 +52,12 @@ The best example of a WAN is the **internet**. It allows computers all over the 
 
 > **Think of WAN** as a global highway system that connects everything together, no matter how far apart.
 
-![](/images/basics/wan-network.webp)
-
+<Image
+  src="/images/basics/wan-network.webp"
+  alt="A WAN network diagram"
+  width={1200}
+  height={630}
+/>
 
 ### 4. Personal Area Network (PAN)
 
@@ -55,8 +67,12 @@ For instance, your smartphone, wireless earbuds, smartwatch, and laptop might al
 
 > **Think of PAN** as your personal space of connected devices, just for you.
 
-![](/images/basics/pan-network.webp)
----
+<Image
+  src="/images/basics/pan-network.webp"
+  alt="A PAN network diagram"
+  width={1200}
+  height={630}
+/>
 
 ## Comparison Table
 
@@ -78,5 +94,7 @@ In this chapter, we learned that **computer networks** come in different types d
 Understanding these basic types helps us see how information flows—from our homes to the world—and prepares us to explore more advanced topics like wireless networks, VPNs, and network design.
 
 <Aside type="note">
-In the next section, we’ll look at some **specialized networks**, such as wireless networks, VPNs, and storage networks—and how they help in different situations.
+  In the next section, we’ll look at some **specialized networks**, such as
+  wireless networks, VPNs, and storage networks—and how they help in different
+  situations.
 </Aside>

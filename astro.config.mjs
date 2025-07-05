@@ -30,6 +30,13 @@ export default defineConfig({
           ],
         },
         // {
+        //   label: "Network Models",
+        //   items: [
+        //     { label: "OSI Model", slug: "guides/models/osi-model" },
+        //     { label: "TCP/IP Model", slug: "guides/models/tcp-ip-model" },
+        //   ],
+        // },
+        // {
         //   label: "Network Devices",
         //   items: [
         //     { label: "Cables", slug: "guides/devices/cables" },
@@ -50,13 +57,6 @@ export default defineConfig({
         //     { label: "IP Address Classes (IPv4)", slug: "guides/basics" },
         //     { label: "Types of IP Addresses", slug: "guides/basics" },
         //     { label: "Classeless ", slug: "guides/basics" },
-        //   ],
-        // },
-        // {
-        //   label: "Network Models",
-        //   items: [
-        //     { label: "OSI Model", slug: "guides/basics" },
-        //     { label: "TCP/IP Model", slug: "guides/basics" },
         //   ],
         // },
         // {

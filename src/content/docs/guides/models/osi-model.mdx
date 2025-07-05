@@ -1,0 +1,128 @@
+---
+title: OSI Model
+---
+
+import { Card } from "@astrojs/starlight/components"
+
+## Understanding the OSI Model
+
+To understand how computers talk to each other across a network, we need a guide—a way to explain what happens when data travels from one device to another. That’s where the **OSI Model** comes in.
+
+The **OSI Model** (short for *Open Systems Interconnection Model*) is a way of breaking down the process of sending and receiving data into **seven simple steps** called **layers**. Each layer has a specific job, and together, they make network communication work smoothly.
+
+---
+
+### Why Do We Need the OSI Model?
+
+Think of it like this: when you send a message to someone, there are steps involved. You write the message, package it, choose a delivery method, and then it travels through different channels before the other person reads it.
+
+Computers do something similar. The OSI Model helps us:
+
+* Understand how data moves through a network
+* Troubleshoot problems by narrowing down where something went wrong
+* Design systems that work well together—even if they’re made by different companies
+
+---
+
+## The 7 Layers of the OSI Model
+
+Let’s look at each layer, starting from the one closest to the user.
+
+### 7. Application Layer
+
+This is the layer you interact with directly—it’s where apps like web browsers, email, and file-sharing programs live.
+
+<Card title="Examples">
+  HTTP, FTP, SMTP, DNS
+</Card>
+
+### 6. Presentation Layer
+
+This layer helps different systems understand each other by translating data. It handles things like encryption and compression.
+
+<Card title="Examples">
+  SSL/TLS, JPEG, MPEG, ASCII
+</Card>
+
+### 5. Session Layer
+
+The session layer keeps communication between two devices organized. It opens, maintains, and closes connections.
+
+<Card title="Examples">
+  NetBIOS, RPC, PPTP
+</Card>
+
+### 4. Transport Layer
+
+Here, data is broken into chunks (called segments) and sent to the right application. It also makes sure everything arrives correctly.
+
+<Card title="Examples">
+  TCP, UDP
+</Card>
+
+### 3. Network Layer
+
+This is where routing happens. It finds the best path for the data to travel from sender to receiver.
+
+<Card title="Examples">
+  IP, ICMP, IPsec
+</Card>
+
+### 2. Data Link Layer
+
+This layer helps move data across a physical network—like from your computer to your router. It uses MAC addresses to identify devices.
+
+<Card title="Examples">
+  Ethernet, ARP
+</Card>
+
+### 1. Physical Layer
+
+The lowest layer is all about the hardware—the wires, signals, and voltages that carry data as bits (0s and 1s).
+
+<Card title="Examples">
+  Cables, Switches, Hubs
+</Card>
+
+---
+
+![osi-model-diagram](/images/models/osi-stack.webp)
+
+---
+
+## A Quick Analogy
+
+Imagine sending a package:
+
+1. **Physical** – The delivery truck moves it.
+2. **Data Link** – The address on the package tells the truck where to go.
+3. **Network** – The delivery route is chosen.
+4. **Transport** – The package is broken into boxes and tracked.
+5. **Session** – A record is kept of the delivery schedule.
+6. **Presentation** – The package is translated into a language the receiver understands.
+7. **Application** – The person opens and reads the package.
+
+---
+
+## OSI vs TCP/IP
+
+You may have heard of another model called **TCP/IP**. It’s actually the one used in real-world networking, but it’s simpler—it only has four layers. Still, the OSI Model is helpful for learning because it’s more detailed.
+
+| OSI Layer        | TCP/IP Equivalent |
+| ---------------- | ----------------- |
+| Application (7)  | Application       |
+| Presentation (6) | Application       |
+| Session (5)      | Application       |
+| Transport (4)    | Transport         |
+| Network (3)      | Internet          |
+| Data Link (2)    | Network Access    |
+| Physical (1)     | Network Access    |
+
+---
+
+## Summary
+
+The **OSI Model** breaks network communication into seven layers, from physical connections to user-facing applications. Each layer has its own job, and understanding them helps us build, manage, and troubleshoot networks more effectively.
+
+By learning the OSI Model, you're taking a big step toward understanding how the internet works—one layer at a time.
+

@@ -3,16 +3,16 @@ title: Introduction to Networking
 description: Learn the basics of networking in a simple and beginner-friendly way.
 ---
 
+import { Image } from "astro:assets";
 import { Aside, Card } from "@astrojs/starlight/components";
 
 <Aside type="tip">
   To support me for this helpful resource, [click here](/support).
 </Aside>
 
-
 ## Networking
 
-Before we talk about networking in computer science, let’s first understand what a **network** is. 
+Before we talk about networking in computer science, let’s first understand what a **network** is.
 
 Networking usually means making and keeping connections with other people to reach certain goals, either at work or in everyday life.
 
@@ -22,7 +22,13 @@ A **network** is a group of things—called **nodes**—that are connected to ea
 
 Let’s look at a simple example: imagine a company with many employees. Each person is a node, and the way they talk to each other, work together, or share ideas are the links. This is a basic idea of how networking works.
 
-![company-network-example](/images/basics/public-network.webp)
+<Image
+  src="/images/basics/public-network.webp"
+  alt="A company network."
+  width={1200}
+  height={630}
+  loading="eager"
+/>
 
 ### Computer Network
 
@@ -31,12 +37,18 @@ Computer networks work in a similar way to social networks. Just like people con
 We can define a computer network as:
 
 <Card title="Definition">
-  _A network of interconnected computing devices that can exchange data and share resources._
+  _A network of interconnected computing devices that can exchange data and
+  share resources._
 </Card>
 
 This means computers, phones, or other devices are linked together so they can communicate, send data, and use shared tools like printers, files, or internet connections.
 
-![computer-network-example](/images/basics/computer-network.webp)
+<Image
+  src="/images/basics/computer-network.webp"
+  alt="A computer network."
+  width={1200}
+  height={630}
+/>
 
 ## Summary
 
@@ -47,5 +59,6 @@ We also saw how networks are made up of **nodes** and **links**, and how this id
 Understanding these basic concepts is the first step toward exploring how the internet works, how data travels, and how different types of networks are designed.
 
 <Aside type="note">
-  In the next chapter, we’ll explore the **types of computer networks**, such as LAN, WAN, and the internet, and how they function in real life.
+  In the next chapter, we’ll explore the **types of computer networks**, such as
+  LAN, WAN, and the internet, and how they function in real life.
 </Aside>

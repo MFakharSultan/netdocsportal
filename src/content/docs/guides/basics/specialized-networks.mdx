@@ -3,8 +3,8 @@ title: Specialized Computer Networks
 description: Learn about specialized networks like WLAN, VPN, SAN, and others, and how they serve specific needs in different environments.
 ---
 
-import { Aside } from "@astrojs/starlight/components"
-
+import { Image } from "astro:assets";
+import { Aside } from "@astrojs/starlight/components";
 
 In the previous chapter, we explored the **main types of computer networks**—like LAN, WAN, MAN, and PAN. These are the building blocks of modern communication.
 
@@ -24,8 +24,10 @@ You’ve used a WLAN if you've ever connected your phone, laptop, or tablet to a
 
 > **WLAN = LAN + Wireless freedom**
 
-![](/images/basics/wlan-network.gif)
-
+<video autoplay loop muted playsinline>
+  <source src="/videos/basics/wlan-network.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 ---
 
 ## 2. Virtual Private Network (VPN)
@@ -38,7 +40,10 @@ They’re also used by individuals to **protect privacy** and access content fro
 
 > **Think of a VPN as a private tunnel through a public road.**
 
-![](/images/basics/vpn-network.gif)
+<video autoplay loop muted playsinline>
+  <source src="/videos/basics/vpn-network.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 ---
 
 ## 3. Storage Area Network (SAN)
@@ -49,7 +54,12 @@ These are used in data centers or enterprises where massive amounts of data need
 
 > **SANs** are like high-speed railways just for data storage.
 
-![](/images/basics/san-network.webp)
+<Image
+  src="/images/basics/san-network.webp"
+  alt="A SAN network diagram"
+  width={1200}
+  height={630}
+/>
 
 ---
 
@@ -89,19 +99,20 @@ These **specialized networks** are built to meet specific needs—from enabling 
 
 Here’s a quick overview:
 
-| **Network Type** | **Purpose**                                       | **Example Use Case**                            |
-|------------------|---------------------------------------------------|--------------------------------------------------|
-| **WLAN**         | Wireless local network                            | Home Wi-Fi, coffee shop internet                |
-| **VPN**          | Secure connection over public internet            | Remote work, privacy protection                 |
-| **SAN**          | High-speed storage access                         | Data centers, video hosting platforms           |
-| **CAN**          | Connect multiple LANs within a campus             | University buildings, military bases            |
-| **EPN**          | Private network for enterprise use                | Company offices across regions                  |
-| **VAN**          | Logical grouping of devices across a network      | Department-based access control in organizations|
+| **Network Type** | **Purpose**                                  | **Example Use Case**                             |
+| ---------------- | -------------------------------------------- | ------------------------------------------------ |
+| **WLAN**         | Wireless local network                       | Home Wi-Fi, coffee shop internet                 |
+| **VPN**          | Secure connection over public internet       | Remote work, privacy protection                  |
+| **SAN**          | High-speed storage access                    | Data centers, video hosting platforms            |
+| **CAN**          | Connect multiple LANs within a campus        | University buildings, military bases             |
+| **EPN**          | Private network for enterprise use           | Company offices across regions                   |
+| **VAN**          | Logical grouping of devices across a network | Department-based access control in organizations |
 
 ---
 
 As you can see, computer networks can be customized in many ways to meet the needs of different users and environments. Each specialized network helps solve real-world problems—whether it's staying mobile, secure, or scalable.
 
 <Aside type="note">
-  In the next chapter, we’ll explore **network topologies**—the physical and logical layout of how computers and devices are arranged in a network.
+  In the next chapter, we’ll explore **network topologies**—the physical and
+  logical layout of how computers and devices are arranged in a network.
 </Aside>

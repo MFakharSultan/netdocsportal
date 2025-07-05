@@ -3,7 +3,8 @@ title: Network Topologies
 description: Understand how computers and devices are physically and logically arranged in a network through different topology structures like bus, star, ring, mesh, and hybrid.
 ---
 
-import { Aside } from "@astrojs/starlight/components"
+import { Image } from "astro:assets";
+import { Aside } from "@astrojs/starlight/components";
 
 So far, we’ve explored **what [networks](/guides/basics/introduction) are** and the **[types of networks](/guides/basics/types-of-computer-networks)** that exist. But how are the devices inside a network actually connected to one another?
 
@@ -36,7 +37,12 @@ Data travels in both directions on this line. Only one device can send data at a
 
 > Imagine people shouting down a hallway—only one person can talk at a time, and if the hallway collapses, no one can communicate.
 
-![](/images/basics/bus-topology.webp)
+<Image
+  src="/images/basics/bus-topology.webp"
+  alt="A bus topology"
+  width={1200}
+  height={630}
+/>
 
 **Pros:**
 
@@ -57,7 +63,12 @@ A **star topology** connects all devices to a **central hub or switch**. Data fl
 
 > Think of it like a wheel, with the hub in the middle and spokes connecting each device.
 
-![](/images/basics/star-topology.webp)
+<Image
+  src="/images/basics/star-topology.webp"
+  alt="A star topology"
+  width={1200}
+  height={630}
+/>
 
 **Pros:**
 
@@ -77,7 +88,12 @@ In a **ring topology**, each device connects to exactly two others, forming a **
 
 > Think of it like passing a note around a circular table—everyone has to wait their turn.
 
-![](/images/basics/ring-topology.webp)
+<Image
+  src="/images/basics/ring-topology.webp"
+  alt="A ring topology"
+  width={1200}
+  height={630}
+/>
 
 **Pros:**
 
@@ -97,7 +113,12 @@ In a **mesh topology**, every device is connected to **every other device** in t
 
 > It’s like a group chat where everyone is directly connected to everyone else.
 
-![](/images/basics/mesh-topology.webp)
+<Image
+  src="/images/basics/mesh-topology.webp"
+  alt="A mesh topology"
+  width={1200}
+  height={630}
+/>
 
 **Pros:**
 
@@ -119,7 +140,12 @@ This allows you to **customize** the network based on specific needs—performan
 
 > It’s like designing a city with roads, subways, and bike lanes all working together.
 
-![](/images/basics/hybrid-topology.webp)
+<Image
+  src="/images/basics/hybrid-topology.webp"
+  alt="A hybrid topology"
+  width={1200}
+  height={630}
+/>
 
 **Pros:**
 
@@ -135,13 +161,13 @@ This allows you to **customize** the network based on specific needs—performan
 
 ## Comparison Table
 
-| **Topology** | **Structure**                | **Reliability** | **Cost**       | **Ease of Setup** | **Best Use Case**                  |
-|--------------|------------------------------|------------------|----------------|-------------------|------------------------------------|
-| **Bus**      | All devices on one cable     | Low              | Low            | Easy              | Small, temporary networks          |
-| **Star**     | Devices connect to a hub     | Moderate         | Moderate       | Easy              | Home or office LANs                |
-| **Ring**     | Devices in a loop            | Low–Moderate     | Moderate       | Moderate          | Networks needing ordered flow      |
-| **Mesh**     | Each device to every other   | Very High        | Very High      | Complex           | Military, banking, critical systems |
-| **Hybrid**   | Combination of topologies    | High             | Varies         | Complex           | Large, scalable enterprise setups  |
+| **Topology** | **Structure**              | **Reliability** | **Cost**  | **Ease of Setup** | **Best Use Case**                   |
+| ------------ | -------------------------- | --------------- | --------- | ----------------- | ----------------------------------- |
+| **Bus**      | All devices on one cable   | Low             | Low       | Easy              | Small, temporary networks           |
+| **Star**     | Devices connect to a hub   | Moderate        | Moderate  | Easy              | Home or office LANs                 |
+| **Ring**     | Devices in a loop          | Low–Moderate    | Moderate  | Moderate          | Networks needing ordered flow       |
+| **Mesh**     | Each device to every other | Very High       | Very High | Complex           | Military, banking, critical systems |
+| **Hybrid**   | Combination of topologies  | High            | Varies    | Complex           | Large, scalable enterprise setups   |
 
 ---
 
@@ -152,5 +178,7 @@ Network topologies are like the **blueprints** of how devices are connected. Eac
 Understanding topologies helps you design smarter networks and troubleshoot them more effectively.
 
 <Aside type="note">
-  In the next chapter, we’ll learn about **network devices**—like routers, switches, and hubs—that make these topologies work in real life.
+  In the next chapter, we will explore network models—such as the OSI model and
+  the TCP/IP model—that enable these topologies to function in real-world
+  scenarios.
 </Aside>
