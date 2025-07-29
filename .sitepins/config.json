@@ -4,7 +4,7 @@
     "public": "public/"
   },
   "content": {
-    "root": "src/content/docs/guides"
+    "root": "src/content/docs/guides/basics"
   },
   "themeConfig": [],
   "arrangement": [],
